@@ -1,0 +1,23 @@
+<form ng-submit="userSignup()">
+  <legend>Signup</legend>
+
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Your First Name" ng-model="user.name">
+  </div>
+  <div class="form-group">
+    <label for="number">Phone Number</label>
+    <input type="number" class="form-control" id="number" placeholder="Number must be written in this format: +1##########" ng-model="user.number">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="test@test.com" ng-model="user.email">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="********" ng-model="user.password">
+  </div>
+  <h3>Don't forget to save our number as a contact in your phone!</h3>
+  <button type="submit" class="btn btn-primary">Signup</button>
+</form>
+<p>Already have an account?<a href="/login">Login!</a></p>
